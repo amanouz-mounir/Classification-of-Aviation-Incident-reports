@@ -20,7 +20,7 @@ An interactive Streamlit application for classifying flight reports into multipl
 
 Navigate to the project directory:
 ```bash
-cd "/home/joker/Downloads/new cassiopee/ApplicationWeb"
+cd "your_folder/ApplicationWeb"
 ```
 
 ### 2. Create a Virtual Environment with Python 3.11 (Required)
