@@ -105,9 +105,9 @@ ApplicationWeb/
 
 The application supports multiple AI models:
 
-- **Transformer Models**: Advanced neural networks for text classification (BERT Model)
+- **BERT Model**: Advanced neural networks for text classification (Transformer Models)
 - **LightGBM**: Gradient boosting framework for structured data
 - **XGBoost**: Extreme gradient boosting for high-performance classification
 - **RNN**: Recurrent neural network for sequence processing
-- **MAPIE**: Not implemented due to compatibility issues with the model save
+- **MAPIE + Random Forest**: Not implemented due to compatibility issues with the model save
 
