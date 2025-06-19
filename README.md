@@ -1,4 +1,4 @@
-# Flight Reports Classification Demo
+# Flight Reports Classification Project
 
 An interactive Streamlit application for classifying flight reports into multiple categories using AI models including transformers, LightGBM, and XGBoost.
 
@@ -9,31 +9,25 @@ An interactive Streamlit application for classifying flight reports into multipl
 - **Model Interpretability**: SHAP integration for model explainability
 - **Text Preprocessing**: Specific text cleaning and preprocessing pipeline
 
-## Prerequisites
-
-- Python 3.11 or lower (NECESSARY FOR TENSORFLOW TO WORK!!!!!!)
-- pip package manager
-
 ## Installation
 
 ### 1. Download the Project
 
 Navigate to the project directory:
 ```bash
-cd "/home/joker/Downloads/new cassiopee/ApplicationWeb"
+cd "~/Repository/ApplicationWeb"
 ```
 
-### 2. Create a Virtual Environment with Python 3.11 (Required)
+### 2. Create a Virtual Environment with Python 3.12.3
 
-**Important**: This application requires Python 3.11 or lower for TensorFlow compatibility.
 
 ```bash
-# Create virtual environment with Python 3.11 specifically
-python3.11 -m venv venv
+# Create virtual environment with Python 3.12.3
+python3 -m venv venv
 
-# If python3.11 is not available, you can also try:
-# python3 -m venv venv  (if your system default is 3.11)
-# OR install Python 3.11 first if not available on your system
+# If python3 is not available, you can also try:
+# python3 -m venv venv  (if your system default is 3.12)
+# OR install Python 3.12.3 first if not available on your system
 
 # Activate virtual environment
 # On Linux/Mac:
@@ -41,7 +35,7 @@ source venv/bin/activate
 # On Windows:
 # venv\Scripts\activate
 
-# Verify Python version (should show 3.11.x)
+# Verify Python version 
 python --version
 ```
 
@@ -84,21 +78,21 @@ streamlit run main.py
 ## Project Structure
 
 ```
-ApplicationWeb/
-├── main.py              # Main Streamlit application
-├── app.py               # Core application logic and utilities
-├── requirements.txt     # Python dependencies
-├── README.md           # This file
-├── TestTruth_Brut.csv  # Sample data file
-├── Models/             # Pre-trained models directory
-│   ├── lgbm_model.joblib
-│   ├── RNN_model.h5
-│   ├── xgboost_model.joblib
-│   └── monmodele/      # Transformer model files
-└── Images/             # Application assets
-    ├── logo3.png
-    ├── clean_text.png
-    └── text.png
+|-README.md
+|-ApplicationWeb/
+└── ├──main.py              # Main Streamlit application
+    ├── app.py               # Core application logic and utilities
+    ├── requirements.txt     # Python dependencies
+    ├── TestTruth_Brut.csv  # Sample data file
+    ├── Models/             # Pre-trained models directory
+    │   ├── lgbm_model.joblib
+    │   ├── RNN_model.h5
+    │   ├── xgboost_model.joblib
+    │   └── monmodele/      # Transformer model files
+    └── Images/             # Application assets
+        ├── logo3.png
+        ├── clean_text.png
+        └── text.png
 ```
 
 ## Models
@@ -109,5 +103,16 @@ The application supports multiple AI models:
 - **LightGBM**: Gradient boosting framework for structured data
 - **XGBoost**: Extreme gradient boosting for high-performance classification
 - **RNN**: Recurrent neural network for sequence processing
-- **MAPIE**: Not implemented due to compatibility issues with the model save
+- **MAPIE + Random Forest**: Uncertainty quantification method combined with ensemble learning for robust predictions
+
+## 🔍 About the BERT Model
+
+The BERT model used in this project is **not included in this GitHub repository** due to its large size.
+
+Similarly, the **MAPIE + Random Forest**, and **RNN** models are not included here due to compatibility issues with the model save.
+
+📦 If you would like to obtain any of these models, please feel free to contact me directly by email.
+
+Thank you for your understanding!
+
 
